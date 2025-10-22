@@ -1,11 +1,15 @@
+import gladius from '../assets/images/glad.jpg';
+
 function Specs() {
   return (
     <section className="py-20 bg-base-100">
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Product Specifications</h2>
-          <p className="text-lg opacity-70">Explore our premium product line</p>
+          <h2 className="text-4xl font-bold mb-4">Nuestros Robots</h2>
+          <p className="text-lg opacity-70">
+            Explora lo mejor para la robótica educativa
+          </p>
         </div>
 
         <div className="space-y-24">
@@ -14,7 +18,7 @@ function Specs() {
             {/* Image */}
             <div className="lg:w-1/2">
               <img
-                src="/product1.png"
+                src={gladius}
                 alt="Product Pro"
                 className="rounded-lg shadow-2xl w-full object-cover"
               />
@@ -22,10 +26,10 @@ function Specs() {
             {/* Specs */}
             <div className="lg:w-1/2">
               <div className="badge badge-primary mb-4">Premium</div>
-              <h3 className="text-3xl font-bold mb-4">Product Pro</h3>
+              <h3 className="text-3xl font-bold mb-4">GLADIUS</h3>
               <p className="text-lg opacity-70 mb-6">
-                Our flagship model designed for professionals who demand the
-                best performance.
+                Desarrollado para aprender desde niveles iniciales hasta niveles
+                avanzados.
               </p>
 
               <ul className="space-y-4 mb-8">
@@ -45,9 +49,9 @@ function Specs() {
                     />
                   </svg>
                   <div>
-                    <strong className="text-lg">Intel Core i9 Processor</strong>
+                    <strong className="text-lg">Basado en ESP32</strong>
                     <p className="text-sm opacity-70">
-                      Latest generation for maximum performance
+                      Microcontrolador de alto rendimiento
                     </p>
                   </div>
                 </li>
@@ -67,9 +71,11 @@ function Specs() {
                     />
                   </svg>
                   <div>
-                    <strong className="text-lg">32GB RAM</strong>
+                    <strong className="text-lg">
+                      Pines I/O de propósito general
+                    </strong>
                     <p className="text-sm opacity-70">
-                      DDR5 memory for seamless multitasking
+                      Expande las capacidades del robot
                     </p>
                   </div>
                 </li>
@@ -89,9 +95,9 @@ function Specs() {
                     />
                   </svg>
                   <div>
-                    <strong className="text-lg">1TB NVMe SSD</strong>
+                    <strong className="text-lg">IMU MPU6050</strong>
                     <p className="text-sm opacity-70">
-                      Ultra-fast storage for your files
+                      Ideal para navegación autónoma
                     </p>
                   </div>
                 </li>
@@ -111,9 +117,10 @@ function Specs() {
                     />
                   </svg>
                   <div>
-                    <strong className="text-lg">15.6" 4K OLED Display</strong>
+                    <strong className="text-lg">Conectividad Wifi</strong>
                     <p className="text-sm opacity-70">
-                      Stunning visuals with true blacks
+                      Posibilidad de conectarse con dispositivos de manera
+                      remota.
                     </p>
                   </div>
                 </li>
@@ -133,17 +140,17 @@ function Specs() {
                     />
                   </svg>
                   <div>
-                    <strong className="text-lg">12 Hour Battery Life</strong>
-                    <p className="text-sm opacity-70">
-                      All-day productivity on a single charge
-                    </p>
+                    <strong className="text-lg">Bateria Li-On </strong>
+                    <p className="text-sm opacity-70">Alta durabilidad</p>
                   </div>
                 </li>
               </ul>
 
               <div className="flex items-center gap-4">
-                <div className="text-4xl font-bold text-primary">$1,999</div>
-                <button className="btn btn-primary btn-lg">Buy Now</button>
+                {/* <div className="text-4xl font-bold text-primary">$1,999</div> */}
+                <button className="btn btn-primary btn-lg">
+                  Compralo Ahora
+                </button>
               </div>
             </div>
           </div>
@@ -165,10 +172,9 @@ function Specs() {
             {/* Specs */}
             <div className="lg:w-1/2">
               <div className="badge badge-secondary mb-4">Best Value</div>
-              <h3 className="text-3xl font-bold mb-4">Product Lite</h3>
+              <h3 className="text-3xl font-bold mb-4">ORACULUS</h3>
               <p className="text-lg opacity-70 mb-6">
-                Perfect balance of performance and portability for everyday
-                users.
+                Perfecto para controlar robot de manera inalambrica.
               </p>
 
               <ul className="space-y-4 mb-8">
@@ -188,9 +194,31 @@ function Specs() {
                     />
                   </svg>
                   <div>
-                    <strong className="text-lg">Intel Core i5 Processor</strong>
+                    <strong className="text-lg">Basado en un ESP32</strong>
+                    <p className="text-sm opacity-70">Rendimiento eficiente.</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6 text-success flex-shrink-0 mt-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <div>
+                    <strong className="text-lg">
+                      Conectividad WiFi Bluetooth
+                    </strong>
                     <p className="text-sm opacity-70">
-                      Efficient performance for daily tasks
+                      Puedes conectarte a cualquier robot
                     </p>
                   </div>
                 </li>
@@ -210,9 +238,9 @@ function Specs() {
                     />
                   </svg>
                   <div>
-                    <strong className="text-lg">16GB RAM</strong>
+                    <strong className="text-lg">JoySticks configurables</strong>
                     <p className="text-sm opacity-70">
-                      Smooth performance for most applications
+                      Tu decides como controlar un robot
                     </p>
                   </div>
                 </li>
@@ -232,9 +260,9 @@ function Specs() {
                     />
                   </svg>
                   <div>
-                    <strong className="text-lg">512GB NVMe SSD</strong>
+                    <strong className="text-lg">Botones configurables</strong>
                     <p className="text-sm opacity-70">
-                      Fast storage for your essentials
+                      Puedes decidir la funcionalidad de cada una.
                     </p>
                   </div>
                 </li>
@@ -254,39 +282,19 @@ function Specs() {
                     />
                   </svg>
                   <div>
-                    <strong className="text-lg">14" Full HD Display</strong>
+                    <strong className="text-lg">Batería interna</strong>
                     <p className="text-sm opacity-70">
-                      Crisp visuals in a compact form
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-success flex-shrink-0 mt-1"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                  <div>
-                    <strong className="text-lg">10 Hour Battery Life</strong>
-                    <p className="text-sm opacity-70">
-                      Reliable power for your workday
+                      Para un funcionamiento de largo tiempo
                     </p>
                   </div>
                 </li>
               </ul>
 
               <div className="flex items-center gap-4">
-                <div className="text-4xl font-bold text-primary">$1,299</div>
-                <button className="btn btn-primary btn-lg">Buy Now</button>
+                {/* <div className="text-4xl font-bold text-primary">$1,299</div> */}
+                <button className="btn btn-primary btn-lg">
+                  Comprar ahora
+                </button>
               </div>
             </div>
           </div>
