@@ -10,7 +10,7 @@ function Hero() {
           <p className="text-xl mb-8">
             Niveles: básico - intermedio - avanzado
           </p>
-          
+
           {/* CTA Buttons */}
           <div className="flex gap-4 justify-center mb-12">
             <button className="btn btn-lg bg-white text-primary hover:bg-base-200">
@@ -20,7 +20,7 @@ function Hero() {
               Videos Demo
             </button>
           </div>
-          
+
           {/* Stats */}
           <div className="stats shadow bg-base-100 text-primary">
             <div className="stat">
@@ -39,7 +39,7 @@ function Hero() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Hero;
